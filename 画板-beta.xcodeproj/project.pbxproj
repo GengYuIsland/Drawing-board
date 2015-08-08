@@ -14,6 +14,10 @@
 		F45BF98E1B7459F80019059B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45BF98D1B7459F80019059B /* Images.xcassets */; };
 		F45BF9911B7459F80019059B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45BF98F1B7459F80019059B /* LaunchScreen.xib */; };
 		F45BF99D1B7459F80019059B /* ___betaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF99C1B7459F80019059B /* ___betaTests.m */; };
+		F45BF9A81B745A290019059B /* ToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF9A71B745A290019059B /* ToolBarView.m */; };
+		F45BF9AB1B745A3B0019059B /* DrawAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF9AA1B745A3B0019059B /* DrawAreaView.m */; };
+		F45BF9AE1B745A4C0019059B /* LineModal.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF9AD1B745A4C0019059B /* LineModal.m */; };
+		F45BFA1A1B74BDE10019059B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45BFA191B74BDE10019059B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		F45BF9961B7459F80019059B /* 画板-betaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "画板-betaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45BF99B1B7459F80019059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F45BF99C1B7459F80019059B /* ___betaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___betaTests.m"; sourceTree = "<group>"; };
+		F45BF9A61B745A290019059B /* ToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBarView.h; sourceTree = "<group>"; };
+		F45BF9A71B745A290019059B /* ToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolBarView.m; sourceTree = "<group>"; };
+		F45BF9A91B745A3B0019059B /* DrawAreaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawAreaView.h; sourceTree = "<group>"; };
+		F45BF9AA1B745A3B0019059B /* DrawAreaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawAreaView.m; sourceTree = "<group>"; };
+		F45BF9AC1B745A4C0019059B /* LineModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineModal.h; sourceTree = "<group>"; };
+		F45BF9AD1B745A4C0019059B /* LineModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineModal.m; sourceTree = "<group>"; };
+		F45BF9AF1B745BBB0019059B /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		F45BFA191B74BDE10019059B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45BFA1A1B74BDE10019059B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 		F45BF9741B7459F80019059B = {
 			isa = PBXGroup;
 			children = (
+				F45BFA191B74BDE10019059B /* QuartzCore.framework */,
 				F45BF97F1B7459F80019059B /* 画板-beta */,
 				F45BF9991B7459F80019059B /* 画板-betaTests */,
 				F45BF97E1B7459F80019059B /* Products */,
@@ -81,10 +95,17 @@
 		F45BF97F1B7459F80019059B /* 画板-beta */ = {
 			isa = PBXGroup;
 			children = (
+				F45BF9AF1B745BBB0019059B /* common.h */,
 				F45BF9841B7459F80019059B /* AppDelegate.h */,
 				F45BF9851B7459F80019059B /* AppDelegate.m */,
 				F45BF9871B7459F80019059B /* ViewController.h */,
 				F45BF9881B7459F80019059B /* ViewController.m */,
+				F45BF9A61B745A290019059B /* ToolBarView.h */,
+				F45BF9A71B745A290019059B /* ToolBarView.m */,
+				F45BF9A91B745A3B0019059B /* DrawAreaView.h */,
+				F45BF9AA1B745A3B0019059B /* DrawAreaView.m */,
+				F45BF9AC1B745A4C0019059B /* LineModal.h */,
+				F45BF9AD1B745A4C0019059B /* LineModal.m */,
 				F45BF98A1B7459F80019059B /* Main.storyboard */,
 				F45BF98D1B7459F80019059B /* Images.xcassets */,
 				F45BF98F1B7459F80019059B /* LaunchScreen.xib */,
@@ -221,7 +242,10 @@
 			files = (
 				F45BF9891B7459F80019059B /* ViewController.m in Sources */,
 				F45BF9861B7459F80019059B /* AppDelegate.m in Sources */,
+				F45BF9A81B745A290019059B /* ToolBarView.m in Sources */,
+				F45BF9AE1B745A4C0019059B /* LineModal.m in Sources */,
 				F45BF9831B7459F80019059B /* main.m in Sources */,
+				F45BF9AB1B745A3B0019059B /* DrawAreaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "画板-beta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "画板-beta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +444,7 @@
 				F45BF9A21B7459F80019059B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F45BF9A31B7459F80019059B /* Build configuration list for PBXNativeTarget "画板-betaTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +453,7 @@
 				F45BF9A51B7459F80019059B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToolBarView.h"
+#import "DrawAreaView.h"
+#import "common.h"
 
 @interface ViewController : UIViewController
-
+{
+    
+}
 
 @end
 

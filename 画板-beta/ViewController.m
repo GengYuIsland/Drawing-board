@@ -16,12 +16,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    ToolBarView *toolBarView = [[ToolBarView alloc] initWithFrame:CGRectMake(0, 44, kWidth, 88)];
+    [self.view addSubview:toolBarView];
+    DrawAreaView *drawAreaView = [[DrawAreaView alloc] initWithFrame:CGRectMake(0, 132, kWidth, kHeight-132)];
+    [self.view addSubview:drawAreaView];
+    
+    
+    toolBarView.colorSelBlock = ^(UIColor *color)
+    {
+        drawAreaView.drawColor = color;
+    };
+    
+    toolBarView.widthSelBlock = ^(CGFloat width)
+    {
+        drawAreaView.lineWidth = width;
+    };
+    
+    toolBarView.eraseSelBlock = ^{
+        drawAreaView.lineWidth = 50;
+        drawAreaView.drawColor = [UIColor whiteColor];
+    };
+    
+    toolBarView.backSelBlock = ^{
+        [drawAreaView backAction];
+    };
+    
+    toolBarView.clearSelBlock = ^{
+        [drawAreaView clearAction];
+    };
+
+
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
